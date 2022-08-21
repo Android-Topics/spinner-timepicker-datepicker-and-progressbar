@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinnerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:id="@+id/timePickerBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerID"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Select Time"
+        android:onClick="TimePickerBtn"
+        android:backgroundTint="#151111"
+        />
+
+    <Button
+        android:id="@+id/datePickerBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePickerBtnID"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Select Date"
+        android:onClick="DatePickerBtn"
+        android:backgroundTint="#151111"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePickerBtnID"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/progressBarControlBtnID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarID"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Load Progress"
+        android:backgroundTint="#151111"
+        />
+
+    <ProgressBar
+        android:id="@+id/customProgressBarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarControlBtnID"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/custom_progressbar"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        />
+
+</RelativeLayout>
